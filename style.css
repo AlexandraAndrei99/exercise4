@@ -1,0 +1,389 @@
+:root {
+    --marginTop: 0;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    width: 100%;
+    overflow-x: hidden;
+}
+
+nav{
+position: relative;
+width: 100%;
+background-color: white;
+display: flex;
+flex-direction: row;
+justify-content: space-between;
+align-items: center;
+padding: 1rem 6rem;
+z-index: 41;
+
+}
+.logo{
+   height: 25%;
+}
+.buttons{
+    display: flex;
+    gap: 1.5rem;
+    
+}
+.buttons a:nth-child(1){
+    position: relative;
+    
+}
+.buttons a:nth-child(2){
+    position: relative;
+ 
+}
+.buttons a:nth-child(3){
+    position: relative;  
+}
+.buttons a:nth-child(4){
+    position: relative;
+    
+}
+.buttons a:nth-child(5){
+    position: relative;
+    
+}
+
+.buttons a:nth-child(1):hover::after{
+    opacity: 1;
+}
+.buttons a:nth-child(2):hover::after{
+    opacity: 1;
+}
+.buttons a:nth-child(3):hover::after{
+    opacity: 1;
+}
+.buttons a:nth-child(4):hover::after{
+    opacity: 1;
+}
+.buttons a:nth-child(5):hover::after{
+    opacity: 1;
+}
+
+
+.buttons a:nth-child(1)::after{
+    content: "";
+    width: 100%;
+    height: 0.2rem;
+    background: linear-gradient(to right,hsl(136, 65%, 51%), hsl(192, 70%, 51%));
+    position: absolute;
+    left: 0;
+    top: var(--marginTop);
+    opacity: 0;
+}
+.buttons a:nth-child(2)::after{
+    content: "";
+    width: 100%;
+    height: 0.2rem;
+    background: linear-gradient(to right,hsl(136, 65%, 51%), hsl(192, 70%, 51%));
+    position: absolute;
+    left: 0;
+    top: var(--marginTop);
+    opacity: 0;
+}
+.buttons a:nth-child(3)::after{
+    content: "";
+    width: 100%;
+    height: 0.2rem;
+    background: linear-gradient(to right,hsl(136, 65%, 51%), hsl(192, 70%, 51%));
+    position: absolute;
+    left: 0;
+    top: var(--marginTop);
+    opacity: 0;
+}
+.buttons a:nth-child(4)::after{
+    content: "";
+    width: 100%;
+    height: 0.2rem;
+    background: linear-gradient(to right,hsl(136, 65%, 51%), hsl(192, 70%, 51%));
+    position: absolute;
+    left: 0;
+    top: var(--marginTop);
+    opacity: 0;
+
+}
+.buttons a:hover{
+    color: black;
+    font-weight: bolder;
+}
+.buttons a:nth-child(5)::after{
+    content: "";
+    width: 100%;
+    height: 0.2rem;
+    background: linear-gradient(to right,hsl(136, 65%, 51%), hsl(192, 70%, 51%));
+    position: absolute;
+    left: 0;
+    top: var(--marginTop);
+    opacity: 0;
+}
+a{
+    color: hsl(233, 8%, 62%);
+    text-decoration: none;
+}
+button{
+
+    color: white;
+    background-image: linear-gradient(to right,hsl(136, 65%, 51%), hsl(192, 70%, 51%));
+    border: none;
+    border-radius: 30px;
+    padding: 0.7rem 1.5rem;
+    cursor: pointer ;
+    display: inline-block;
+    font-size: 1rem;
+    font-weight: bolder;
+    
+}
+.probl{
+    cursor: pointer;
+}
+button:hover{
+    opacity: 0.8;
+
+}
+.heroSection{
+    height: 40rem  ;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    background-color: hsl(0, 0%, 98%);
+    padding: 1rem 6rem;
+    position: relative;
+    overflow: hidden;
+ 
+}
+.ctaSection{
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    width: 30%;
+    font-family: 'Public Sans', sans-serif;
+    
+}
+.ctaSection h1{
+    font-weight: 400;
+    color: hsl(233, 26%, 24%);
+    font-size: 3rem;
+}
+.ctaSection p{
+    color: hsl(233, 8%, 62%);
+    line-height: 1.5rem;
+}
+.intro{
+    position: absolute;
+    
+    right: 0;
+    height: 50rem;
+    bottom: -4rem;
+    right: -15rem;
+}
+.mockups{
+    position: absolute;
+    height:55rem;
+    right: -7rem;
+    top: -3rem;
+    z-index: 1;
+    
+}
+.easyBank{
+    position: relative;
+    height: 40rem ;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+    padding: 5rem 6rem;
+    background-color: hsl(220, 16%, 96%);
+    justify-content: space-between;
+    font-family: 'Public Sans', sans-serif;
+    
+
+    
+}
+.easyBank h1{
+    font-weight: 300;
+    font-size: 2.5rem;
+    color: hsl(233, 26%, 24%);
+}
+.easyBank p{
+    color: hsl(233, 8%, 62%);
+    line-height: 1.5rem;
+}
+.details h1{
+    font-size: 1.5rem;
+}
+.details{
+    display: flex;
+    flex-direction: row;
+    gap: 2.5rem;
+    line-height: 1.4rem;
+    justify-content: space-between;
+}
+.bigBox{
+    display: flex;
+    flex-direction: column;
+    padding: 1rem 6rem;
+    background-color: hsl(0, 0%, 98%);;
+    font-family: 'Public Sans', sans-serif;
+    height: 40rem ;
+    width: 100%;
+    justify-content: center;
+    gap: 2.5rem;
+    padding-bottom: 1rem;
+}
+.title{
+
+    font-weight: 300;
+    font-size: 2.5rem;
+    color: hsl(233, 26%, 24%);
+}
+.articles{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 3rem;
+}
+.claire, .hutton, .wilson, .robinson{
+    width: 50%;
+    height: 25rem;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border-radius: 10px;
+    overflow: hidden;
+    
+    
+}
+.claire .img{
+background: url("images/image-currency.jpg");
+ height: 50%;
+ width: 100%; 
+ background-size: cover ;
+ background-position: center center;
+ 
+}
+.wilson .img{
+    background: url("images/image-restaurant.jpg");
+    height: 50%;
+ width: 100%; 
+ background-size: cover ;
+ background-position: center center;
+}
+.hutton .img{
+    background: url("images/image-plane.jpg");
+    height: 50%;
+    width: 100%; 
+    background-size: cover ;
+    background-position: center center;
+}
+.robinson .img{
+    background: url("images/image-confetti.jpg");
+    height: 50%;
+    width: 100%; 
+    background-size: cover ;
+    background-position: center center;
+}
+.articles p{
+    padding: 1rem 1.5rem;
+    font-family: 'Public Sans', sans-serif;
+    color: hsl(233, 8%, 62%);
+    font-size: 0.7rem;
+    font-weight : 400;
+
+}
+.articles h2{
+    font-family: 'Public Sans', sans-serif;
+    color: hsl(233, 8%, 62%);
+    line-height: 1rem;
+    font-weight : 400;
+    font-size: 0.9rem;
+    padding: 1rem 1.5rem 1.5rem ;
+    
+}
+.articles h1{
+    font-weight: 300;
+    font-size: 1.2rem;
+    color: hsl(233, 26%, 24%);
+    padding: 0rem 1.5rem;
+    
+    
+}
+.bigBox h1{
+    transition: color 0.3s ease-out;
+}
+.bigBox h1:hover{
+    color: hsl(136, 65%, 51%);
+    cursor: pointer;
+}
+footer{
+    width: 100%;
+    height: 10rem;
+    display: flex;
+    flex-direction: row;
+    background-color: hsl(233, 26%, 24%);
+    justify-content: space-between;
+    color: white;
+    align-items: center;
+    padding: 0rem 6rem;
+}
+.logo2{
+    height: 25%;
+}
+.part1,.part2,.part3, .second{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 1rem;
+    font-family: 'Public Sans', sans-serif;
+    font-weight: 300;
+    
+}
+.part2,.part3{
+    cursor: pointer;
+}
+.halfF{
+    display: flex;
+    flex-direction: row;
+    gap: 10rem;
+}
+.part2{
+    display: flex;
+    flex-direction: column;
+     
+}
+.second{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 1rem;
+
+}
+.part2 p:hover, .part3 p:hover{
+    color: hsl(136, 65%, 51%);
+    cursor: pointer;
+}
+svg{
+    fill: white;
+    
+}
+svg:hover{
+    
+    fill: hsl(136, 65%, 51%);
+    cursor: pointer;
+}
+.icons{
+    display: flex;
+    flex-direction: row;
+    gap: 0.5rem;
+}
+.second p{
+    color: hsl(233, 8%, 62%);
+}
