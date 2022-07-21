@@ -10,9 +10,14 @@
 body{
     width: 100%;
     overflow-x: hidden;
+    
+}
+.outNavToggler{
+    filter: brightness(50%);
 }
 
 nav{
+
 position: relative;
 width: 100%;
 background-color: white;
@@ -23,6 +28,30 @@ align-items: center;
 padding: 1rem 6rem;
 z-index: 41;
 
+}
+.menuToggler{
+    display: flex !important;
+}
+.menu{
+    font-family: 'Public Sans', sans-serif;
+   border-radius: 10px;
+    display: none ;
+    gap: 1rem;
+    padding: 2rem 0;
+    background-color: white;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    position: absolute;
+    top: 4rem;
+    left: 50%;
+    transform: translate(-50%, 0);
+    width: 90%;
+    
+    
+}
+.menu a{
+    color: black;
 }
 .logo{
    height: 25%;
@@ -387,3 +416,107 @@ svg:hover{
 .second p{
     color: hsl(233, 8%, 62%);
 }
+@media screen and (min-width: 200px)and (max-width: 700px){
+nav{
+    padding: 1rem 1rem;
+}
+.hamburgerToggler {
+    background: url("images/icon-close.svg") !important;
+    background-repeat: no-repeat !important; 
+}
+.hamburger{
+    background: url("images/icon-hamburger.svg");
+    height: 1.2rem;
+    width: 10%; 
+    background-size: cover ;
+    background-position: center center;
+    cursor: pointer;
+
+}
+nav .buttons, .req{
+    display: none;
+}
+.intro {
+    display: none;
+}
+.intro2{
+    position: absolute;
+    background: url("images/bg-intro-mobile.svg");
+    background-repeat: no-repeat;
+    height: 30rem;
+    width: 100%;
+    top: -7rem;
+    left:0 ;
+    z-index: 2;
+}
+.mockups{
+    position: absolute;
+    height:27rem;
+    margin: 0 auto;
+    left: 0;
+    right: 0;
+    padding: 1rem;
+    top: -6.5rem;
+    z-index: 3;
+}
+.heroSection{
+    padding: 1rem 1rem;
+}
+.ctaSection{
+    width: 100%;
+    justify-content: center;
+    margin-top: 15rem;
+    text-align: center;
+}
+.ctaSection h1{
+    font-weight: 400;
+    color: hsl(233, 26%, 24%);
+    font-size: 2.5rem;
+}
+.ctaSection p{
+    color: hsl(233, 8%, 62%);
+    line-height: 1.2rem;
+}
+.easyBank{
+    height: 100%;
+    padding: 1rem 1rem;
+    text-align: center;
+}
+.details{
+    display: flex;
+    flex-direction: column;
+}
+.bigBox{
+    flex-direction: column;
+    padding: 1rem 1rem;
+    height: 100%;
+}
+.title{
+    text-align: center;
+}
+.articles{
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+}
+.claire, .hutton, .wilson,.robinson{
+    width: 100%;
+}
+footer{
+    
+    padding: 2rem 1rem;
+    height: 100%;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.halfF, .second, .part2, .part3{
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap:1.3rem;
+}
+.halfF{
+    gap: 1rem;
+}
+ }

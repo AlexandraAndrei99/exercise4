@@ -14,4 +14,17 @@ const butonReq = document.querySelector('.heroSection button')
 butonReq.addEventListener("click",() => {
     colorH1.style.color= "pink";
 })
+const hamburger= document.querySelector('.hamburger')
+const meniu = document.querySelector('.menu')
+const outNav = document.querySelector('.outNav')
+
+hamburger.addEventListener("click", () =>{
+    meniu.classList.toggle("menuToggler")
+    outNav.classList.toggle("outNavToggler")
+    hamburger.classList.toggle("hamburgerToggler")
+    
+} )
+
+
+
 
